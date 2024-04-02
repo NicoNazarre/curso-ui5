@@ -1,0 +1,86 @@
+{
+    "configurations": [
+        {
+            "name": "Start Fiori-ui5-onedemand-inicio-curso",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "npx",
+            "cwd": "${workspaceFolder}/Fiori-ui5-onedemand-inicio-curso",
+            "windows": {
+                "runtimeExecutable": "npx.cmd"
+            },
+            "runtimeArgs": [
+                "fiori",
+                "run"
+            ],
+            "args": [
+                "--open",
+                "test/flpSandbox.html#app-tile"
+            ],
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart",
+            "outputCapture": "std",
+            "port": 9229,
+            "env": {
+                "DEBUG": "--inspect",
+                "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/.local/curso-ui5/Fiori-ui5-onedemand-inicio-curso\"}"
+            }
+        },
+        {
+            "name": "Start Fiori-ui5-onedemand-inicio-curso Mock",
+            "type": "node",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/Fiori-ui5-onedemand-inicio-curso",
+            "runtimeExecutable": "npx",
+            "windows": {
+                "runtimeExecutable": "npx.cmd"
+            },
+            "runtimeArgs": [
+                "fiori",
+                "run"
+            ],
+            "args": [
+                "--open",
+                "test/flpSandboxMockServer.html#app-tile"
+            ],
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart",
+            "outputCapture": "std",
+            "port": 9229,
+            "env": {
+                "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/.local/curso-ui5/Fiori-ui5-onedemand-inicio-curso\"}"
+            }
+        },
+        {
+            "name": "Start Fiori-ui5-onedemand-inicio-curso Local",
+            "type": "node",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/Fiori-ui5-onedemand-inicio-curso",
+            "runtimeExecutable": "npx",
+            "windows": {
+                "runtimeExecutable": "npx.cmd"
+            },
+            "runtimeArgs": [
+                "fiori",
+                "run"
+            ],
+            "args": [
+                "--config",
+                "./ui5-local.yaml",
+                "--open",
+                "test/flpSandbox.html#app-tile"
+            ],
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart",
+            "outputCapture": "std",
+            "port": 9229,
+            "env": {
+                "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/.local/curso-ui5/Fiori-ui5-onedemand-inicio-curso\"}"
+            }
+        }
+    ],
+    "compounds": []
+}
